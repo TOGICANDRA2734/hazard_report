@@ -19,6 +19,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 <!-- My CSS -->
-<link rel="stylesheet" href="<?= base_url('assets/css/zona_lapor.css'); ?>">
+<link rel="stylesheet" href="<?= base_url('assets/css/app.css'); ?>">
 <!-- Favicon -->
 <link rel="icon" href="<?= base_url('assets/img/img_properties/favicon.png'); ?>">

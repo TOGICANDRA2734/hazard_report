@@ -36,7 +36,10 @@
 								<a href="<?= base_url('admin/changePassword'); ?>" class="btn btn-danger"><i class="fas fa-fw fa-lock"></i> Ganti Password</a>
 							</div>
 							<div class="col">
-								<a href="<?= base_url('admin/editProfile'); ?>" class="btn btn-success"><i class="fas fa-fw fa-user-edit"></i> Ubah Profil</a>
+								<a href="<?= base_url('admin/editProfile'); ?>" class="btn btn-success"><i class="fas fa-fw fa-user-edit"></i> Ubah Profil </a>
+							</div>
+							<div class="col">
+								<a href="<?= base_url('landing/logout'); ?>" class="btn btn-success"><i class="fas fa-fw fa-user-logout"></i> Logout </a>
 							</div>
 						</div>
 					</td>

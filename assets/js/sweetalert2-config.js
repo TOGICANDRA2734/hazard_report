@@ -2,22 +2,24 @@ $(document).ready(function()
 {
 	const flashDataSuccess = $('.flashdata-success').data('flashdata');
 
-	if (flashDataSuccess) {
+	if (flashDataSuccess && flashDataSuccess!='done') {
 		Swal.fire({
 			title: 'Berhasil!',
 			text: flashDataSuccess + '!',
 			icon: 'success'
 		});
+		flashDataSuccess='done';
 	}
 
 	const flashDataFailed = $('.flashdata-failed').data('flashdata');
 
-	if (flashDataFailed) {
+	if (flashDataFailed && flashDataFailed!='done') {
 		Swal.fire({
 			title: 'Gagal!',
 			text: flashDataFailed + '!',
 			icon: 'error'
 		});
+		flashDataFailed='done';
 	}
 
 	$('.btn-delete').on('click', function(e){

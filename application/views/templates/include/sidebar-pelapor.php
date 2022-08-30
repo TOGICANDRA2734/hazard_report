@@ -13,8 +13,8 @@
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item">
           <?php if (
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/pelapor/profile' || 
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/pelapor/profile/'
+            $_SERVER['REQUEST_URI'] == '/app/pelapor/profile' || 
+            $_SERVER['REQUEST_URI'] == '/app/pelapor/profile/'
           ): ?>
             <a href="<?= base_url('pelapor/profile'); ?>" class="nav-link active"><i class="nav-icon fas fa-fw fa-user"></i> <p><?= $dataUser['username']; ?></p></a>
           <?php else: ?>
@@ -23,8 +23,8 @@
         </li>
         <li class="nav-item">
           <?php if (
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/pelapor' || 
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/pelapor/'
+            $_SERVER['REQUEST_URI'] == '/app/pelapor' || 
+            $_SERVER['REQUEST_URI'] == '/app/pelapor/'
           ): ?>
             <a href="<?= base_url('pelapor'); ?>" class="nav-link active">
           <?php else: ?>
@@ -38,8 +38,8 @@
         </li>
         <li class="nav-item">
           <?php if (
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/pelaporPengaduan/addPelaporPengaduan' || 
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/pelaporPengaduan/addPelaporPengaduan/'
+            $_SERVER['REQUEST_URI'] == '/app/pelaporPengaduan/addPelaporPengaduan' || 
+            $_SERVER['REQUEST_URI'] == '/app/pelaporPengaduan/addPelaporPengaduan/'
           ): ?>
             <a href="<?= base_url('pelaporPengaduan/addPelaporPengaduan'); ?>" class="nav-link active">
               <i class="fas fa-fw fa-plus nav-icon"></i>
@@ -54,8 +54,8 @@
         </li>
         <li class="nav-item">
           <?php if (
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/pelaporPengaduan' || 
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/pelaporPengaduan/'
+            $_SERVER['REQUEST_URI'] == '/app/pelaporPengaduan' || 
+            $_SERVER['REQUEST_URI'] == '/app/pelaporPengaduan/'
           ): ?>
             <a href="<?= base_url('pelaporPengaduan'); ?>" class="nav-link active">
               <i class="fas fa-exclamation nav-icon"></i>
@@ -70,8 +70,8 @@
         </li>
         <li class="nav-item">
           <?php if (
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/pelaporLaporan' || 
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/pelaporLaporan/'
+            $_SERVER['REQUEST_URI'] == '/app/pelaporLaporan' || 
+            $_SERVER['REQUEST_URI'] == '/app/pelaporLaporan/'
           ): ?>
             <a href="<?= base_url('pelaporLaporan'); ?>" class="nav-link active">
               <i class="fas fa-file-alt nav-icon"></i>

@@ -8,15 +8,21 @@ class Pelapor extends CI_Controller
 		parent::__construct();
 		$this->load->model('Pelapor_model', 'pelmo');
 		$this->load->model('PelaporPengaduan_model', 'pepemo');
+		
+		$this->load->model('Pengaduan_model', 'pemo');
+		$this->load->model('Landing_model', 'lamo');
+		$this->load->model('Tanggapan_model', 'tamo');
 	}
 
 	public function index()
 	{
 		$this->pelmo->checkLoginUser();
 
-		$data['dataUser']	= $this->pelmo->getDataUser();
-		$data['pengaduan_belum_ditanggapi_pelapor']	= $this->pepemo->getPengaduanByStatusPengaduanByIdMasyarakat('belum_ditanggapi', $data['dataUser']['id_masyarakat']);
- 		$data['title'] 		= 'Dashboard';
+		$data['pengaduan']	= $this->pemo->getPengaduan();
+		$data['title'] = 'Zona Lapor';
+		// $data['dataUser']	= $this->pelmo->getDataUser();
+		// $data['pengaduan_belum_ditanggapi_pelapor']	= $this->pepemo->getPengaduanByStatusPengaduanByIdMasyarakat('belum_ditanggapi', $data['dataUser']['id_masyarakat']);
+ 		// $data['title'] 		= 'Dashboard';
 		$this->load->view('templates/header-pelapor', $data);
 		$this->load->view('pelapor/index', $data);
 		$this->load->view('templates/footer-pelapor', $data);

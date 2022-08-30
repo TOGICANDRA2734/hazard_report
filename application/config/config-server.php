@@ -23,7 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://47.254.242.168/zona_lapor/';
+// $config['base_url'] = 'http://ptrci.co.id/app/';
+$config['base_url'] = '/app/hazard';
+$config['base_url_css'] = '/app';
 
 /*
 |--------------------------------------------------------------------------

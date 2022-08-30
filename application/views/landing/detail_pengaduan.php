@@ -2,7 +2,7 @@
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 	  <div class="container">
 	    <a class="navbar-brand" href="<?= base_url(); ?>">
-	      <img src="<?= base_url('assets/img/img_properties/favicon-text.png'); ?>" class="d-inline-block align-top img-fluid img-w-100">
+	      <img src="<?= base_url_css('assets//img/img_properties/favicon-text.png'); ?>" class="d-inline-block align-top img-fluid img-w-100">
 	    </a>
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
@@ -31,8 +31,8 @@
 
 		<div class="row text-center py-3">
 			<div class="col-lg">
-				<a href="<?= base_url('assets/img/img_pengaduan/') . $pengaduan['foto']; ?>" class="enlarge">
-					<img src="<?= base_url('assets/img/img_pengaduan/') . $pengaduan['foto']; ?>" class="img-fluid img-hm-200" alt="<?= $pengaduan['foto']; ?>">
+				<a href="<?= base_url_css('assets//img/img_pengaduan/') . $pengaduan['foto']; ?>" class="enlarge">
+					<img src="<?= base_url_css('assets//img/img_pengaduan/') . $pengaduan['foto']; ?>" class="img-fluid img-hm-200" alt="<?= $pengaduan['foto']; ?>">
 				</a><br>
 				<small>Klik gambar untuk perbesar</small>
 			</div>
@@ -141,8 +141,8 @@
 										$status = ucwords(strtolower($status));
 									?>
 									<td class="align-middle text-center">
-										<a href="<?= base_url('assets/img/img_tanggapan/') . $dt['foto_tanggapan']; ?>" class="enlarge">
-											<img src="<?= base_url('assets/img/img_tanggapan/') . $dt['foto_tanggapan']; ?>" class="img-fluid img-w-75-hm-100" alt="<?= $dt['foto_tanggapan']; ?>">
+										<a href="<?= base_url_css('assets//img/img_tanggapan/') . $dt['foto_tanggapan']; ?>" class="enlarge">
+											<img src="<?= base_url_css('assets//img/img_tanggapan/') . $dt['foto_tanggapan']; ?>" class="img-fluid img-w-75-hm-100" alt="<?= $dt['foto_tanggapan']; ?>">
 										</a>
 									</td>
 									<td class="align-middle">

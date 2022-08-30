@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
+	'hostname' => '172.172.55.2',
+	'username' => 'rci',
+	'password' => 'rciopr123',
 	'database' => 'zona_lapor',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

@@ -13,8 +13,8 @@
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item">
           <?php if (
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/admin/profile' || 
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/admin/profile/'
+            $_SERVER['REQUEST_URI'] == '/app/admin/profile' || 
+            $_SERVER['REQUEST_URI'] == '/app/admin/profile/'
           ): ?>
             <a href="<?= base_url('admin/profile'); ?>" class="nav-link active"><i class="nav-icon fas fa-fw fa-user"></i> <p><?= $dataUser['username']; ?></p></a>
           <?php else: ?>
@@ -23,8 +23,8 @@
         </li>
         <li class="nav-item">
           <?php if (
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/admin' || 
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/admin/'
+            $_SERVER['REQUEST_URI'] == '/app/admin' || 
+            $_SERVER['REQUEST_URI'] == '/app/admin/'
           ): ?>
             <a href="<?= base_url('admin'); ?>" class="nav-link active">
           <?php else: ?>
@@ -38,8 +38,8 @@
         </li>
         <li class="nav-item">
           <?php if (
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/pengaduan' || 
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/pengaduan/'
+            $_SERVER['REQUEST_URI'] == '/app/pengaduan' || 
+            $_SERVER['REQUEST_URI'] == '/app/pengaduan/'
           ): ?>
             <a href="<?= base_url('pengaduan'); ?>" class="nav-link active">
               <i class="fas fa-exclamation nav-icon"></i>
@@ -55,14 +55,14 @@
        
         <?php if ($dataUser['jabatan'] == 'administrator'): ?>
           <?php if (
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/user' || 
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/user/'||
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/kecamatan' || 
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/kecamatan/' ||
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/kelurahan' || 
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/kelurahan/' ||
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/masyarakat' || 
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/masyarakat/'
+            $_SERVER['REQUEST_URI'] == '/app/user' || 
+            $_SERVER['REQUEST_URI'] == '/app/user/'||
+            $_SERVER['REQUEST_URI'] == '/app/kecamatan' || 
+            $_SERVER['REQUEST_URI'] == '/app/kecamatan/' ||
+            $_SERVER['REQUEST_URI'] == '/app/kelurahan' || 
+            $_SERVER['REQUEST_URI'] == '/app/kelurahan/' ||
+            $_SERVER['REQUEST_URI'] == '/app/masyarakat' || 
+            $_SERVER['REQUEST_URI'] == '/app/masyarakat/'
           ): ?>
             <li class="nav-item menu-open">
             <a href="#" class="nav-link active">
@@ -79,8 +79,8 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <?php if (
-                  $_SERVER['REQUEST_URI'] == '/zona_lapor/user' || 
-                  $_SERVER['REQUEST_URI'] == '/zona_lapor/user/'
+                  $_SERVER['REQUEST_URI'] == '/app/user' || 
+                  $_SERVER['REQUEST_URI'] == '/app/user/'
                 ): ?>
                   <a href="<?= base_url('user'); ?>" class="nav-link active">
                     <i class="fas fa-user nav-icon"></i>
@@ -95,8 +95,8 @@
               </li> 
               <li class="nav-item">
                 <?php if (
-                  $_SERVER['REQUEST_URI'] == '/zona_lapor/kecamatan' || 
-                  $_SERVER['REQUEST_URI'] == '/zona_lapor/kecamatan/'
+                  $_SERVER['REQUEST_URI'] == '/app/kecamatan' || 
+                  $_SERVER['REQUEST_URI'] == '/app/kecamatan/'
                 ): ?>
                   <a href="<?= base_url('kecamatan'); ?>" class="nav-link active">
                     <i class="fas fa-city nav-icon"></i>
@@ -111,8 +111,8 @@
               </li>
               <li class="nav-item">
                 <?php if (
-                  $_SERVER['REQUEST_URI'] == '/zona_lapor/kelurahan' || 
-                  $_SERVER['REQUEST_URI'] == '/zona_lapor/kelurahan/'
+                  $_SERVER['REQUEST_URI'] == '/app/kelurahan' || 
+                  $_SERVER['REQUEST_URI'] == '/app/kelurahan/'
                 ): ?>
                   <a href="<?= base_url('kelurahan'); ?>" class="nav-link active">
                     <i class="fas fa-building nav-icon"></i>
@@ -127,8 +127,8 @@
               </li>
               <li class="nav-item">
                 <?php if (
-                  $_SERVER['REQUEST_URI'] == '/zona_lapor/masyarakat' || 
-                  $_SERVER['REQUEST_URI'] == '/zona_lapor/masyarakat/'
+                  $_SERVER['REQUEST_URI'] == '/app/masyarakat' || 
+                  $_SERVER['REQUEST_URI'] == '/app/masyarakat/'
                 ): ?>
                   <a href="<?= base_url('masyarakat'); ?>" class="nav-link active">
                     <i class="fas fa-users nav-icon"></i>
@@ -147,8 +147,8 @@
 
         <li class="nav-item">
           <?php if (
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/laporan' || 
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/laporan/'
+            $_SERVER['REQUEST_URI'] == '/app/laporan' || 
+            $_SERVER['REQUEST_URI'] == '/app/laporan/'
           ): ?>
             <a href="<?= base_url('laporan'); ?>" class="nav-link active">
               <i class="fas fa-file-alt nav-icon"></i>
@@ -171,8 +171,8 @@
         <div class="dropdown-divider"></div>
         <li class="nav-item">
           <?php if (
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/log' || 
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/log/'
+            $_SERVER['REQUEST_URI'] == '/app/log' || 
+            $_SERVER['REQUEST_URI'] == '/app/log/'
           ): ?>
             <a href="<?= base_url('log'); ?>" class="nav-link active">
               <i class="fas fa-history nav-icon"></i>
@@ -187,7 +187,7 @@
         </li>
         <li class="nav-item">
           <?php if (
-            $_SERVER['REQUEST_URI'] == '/zona_lapor/saran' || 
+            $_SERVER['REQUEST_URI'] == '/app/saran' || 
             $_SERVER['REQUEST_URI'] == '/zona_lapor/saran/'
           ): ?>
             <a href="<?= base_url('saran'); ?>" class="nav-link active">
