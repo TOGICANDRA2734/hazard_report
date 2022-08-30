@@ -36,7 +36,9 @@
 						<label for="password"><i class="fas fa-fw fa-lock"></i> Password</label>
 						<input type="password" id="password" class="form-control" name="password" required>
 					</div>
-					<div class="form-group text-right">
+					<div class="form-group text-right" style="display: flex; justify-content: space-between; align-items:center;">
+						<a href="<?= base_url('landing/daftar'); ?>" style="color: black;">Buat Akun</a>
+
 						<button type="submit" class="btn btn-danger"><i class="fas fa-fw fa-sign-in-alt"></i> Masuk</button>
 					</div>
 				</form>

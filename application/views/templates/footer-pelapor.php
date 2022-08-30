@@ -1,4 +1,4 @@
-<footer class="">
+<footer class="pt-5">
 		<!-- Bottom Navbar -->
 		<nav class="navbar navbar-dark bg-black navbar-expand fixed-bottom">
 			<ul class="navbar-nav nav-justified w-100">

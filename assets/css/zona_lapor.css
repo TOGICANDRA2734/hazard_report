@@ -446,7 +446,8 @@ textarea {
   color: #fff !important;
   background-color: #c82333 !important;
   border-color: #bd2130 !important;
-  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.!imo;
+  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.1);
 }
 /*------------ btn login ------------*/
+
 

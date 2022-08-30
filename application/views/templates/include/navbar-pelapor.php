@@ -1,9 +1,9 @@
 <!-- Navbar -->
-<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+<nav class="cek" style="display:flex; color:white; justify-content:center; align-items:center; background-color: #f9f9f9; padding: 0 2.5rem;">
   <!-- Left navbar links -->
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      <h4 style="color: black;">RCI</h4>
     </li>
   </ul>
 
@@ -24,7 +24,7 @@
     <!-- Messages Dropdown Menu -->
     <li class="nav-item dropdown">
       <a class="nav-link" data-toggle="dropdown" href="#">
-        <i class="far fa-user"></i>
+        <i class="far fa-user" style="color: black;"></i>
       </a>
       <div class="dropdown-menu dropdown-menu-right">
         <a href="<?= base_url('pelapor/profile'); ?>" class="dropdown-item">

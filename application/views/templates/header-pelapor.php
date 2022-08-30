@@ -11,13 +11,12 @@
   <?php include 'include/css.php'; ?>
   <title><?= $title; ?></title>
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition layout-fixed">
   <div class="wrapper">
     <?php include 'include/navbar-pelapor.php'; ?>
-    <?php include 'include/sidebar-pelapor.php'; ?>
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
+    <!-- <div class="content-wrapper"> -->
       
           
         
