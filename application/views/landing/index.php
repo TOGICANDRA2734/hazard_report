@@ -1,4 +1,4 @@
-<div id="carouselInterval" class="carousel slide mt-5 pt-3" data-ride="carousel">
+<div id="carouselInterval" class="carousel slide " data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-interval="3000">
       <img src="<?= base_url('assets/img/img_properties/img_carousel/carousel-1.jpg'); ?>" class="d-block h-500 w-100">
@@ -46,7 +46,7 @@
 
 <main class="flex-shrink-0">
 	<div class="container pb-5">
-		<div class="row justify-content-center py-4">
+		<!-- <div class="row justify-content-center py-4">
 			<div class="col-lg">
 				<h4>Tata Cara Penggunaan Zona Lapor</h4>
 				<div class="row justify-content-center">
@@ -109,19 +109,18 @@
 				<h4>Tentang</h4>
 				<p>Zona Lapor adalah pengelolaan pengaduan pelayanan publik di daerah Tangerang Selatan, setiap organisasi penyelenggara di Indonesia belum terkelola secara efektif dan terintegrasi. Masing-masing organisasi penyelenggara mengelola pengaduan secara parsial dan tidak terkoordinir dengan baik. Akibatnya terjadi duplikasi penanganan pengaduan, atau bahkan bisa terjadi suatu pengaduan tidak ditangani oleh satupun organisasi penyelenggara, dengan alasan pengaduan bukan kewenangannya. Oleh karena itu, untuk mencapai visi yang baik dan benar dalam penanganan pengaduan masyarakat maka perlu untuk mengintegrasikan sistem pengelolaan pengaduan pelayanan publik yang efektif. Tujuannya, masyarakat memiliki saluran pengaduan yang baik, benar, terorganisir dan terpercaya.</p>
 			</div>
-		</div>
-		<div class="row py-4" id="daftar_laporan">
+		</div> -->
+		<div class="row" id="daftar_laporan" style="padding: 1.5rem 0 3rem;">
 			<div class="col-lg">
-				<h4>Daftar Laporan</h4>
-				<p class="text-justify">Berikut adalah daftar pengaduan-pengaduan masyarakat berdasarkan terbaru:</p>
+				<h4>Laporan Hazard Report</h4>
 				<div class="table-responsive">
 					<table class="table table-bordered" id="table_id">
 						<thead class="thead-dark">
 							<tr>
 								<th class="align-middle">No.</th>
 								<th class="align-middle">Pelapor</th>
-								<th class="align-middle">Tanggal Pengaduan</th>
-								<th class="align-middle">Isi Laporan</th>
+								<th class="align-middle">Tanggal</th>
+								<th class="align-middle">Laporan</th>
 								<th class="align-middle">Lokasi</th>
 								<th class="align-middle">Foto</th>
 								<th class="align-middle">Status</th>
@@ -191,7 +190,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row py-4 justify-content-center" id="saran">
+		<!-- <div class="row py-4 justify-content-center" id="saran">
 			<div class="col-lg-6 my-2">
 				<div class="border p-3 rounded">
 					<h4>Saran</h4>
@@ -237,6 +236,6 @@
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126904.29821208435!2d106.63827143352435!3d-6.295327749784684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fab10419c095%3A0x8706481c2c4aafe4!2sKota%20Tgr.%20Sel.%2C%20Kota%20Tangerang%20Selatan%2C%20Banten!5e0!3m2!1sid!2sid!4v1625382079280!5m2!1sid!2sid" style="border:0; width: 100%; height: 33.125rem;" allowfullscreen="" loading="lazy"></iframe>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </main>

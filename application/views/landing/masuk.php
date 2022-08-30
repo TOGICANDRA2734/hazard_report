@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 	  <div class="container">
 	    <a class="navbar-brand" href="<?= base_url(); ?>">
@@ -20,7 +20,7 @@
 	    </div>
 	  </div>
 	</nav>
-</header>
+</header> -->
 
 <main class="flex-shrink-0 mt-4">
 	<div class="container">

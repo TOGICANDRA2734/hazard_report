@@ -1,6 +1,7 @@
 <header>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 	  <div class="container">
+		<!-- Ganti Logo RCI -->
 	    <a class="navbar-brand" href="<?= base_url(); ?>">
 	      <img src="<?= base_url('assets/img/img_properties/favicon-text.png'); ?>" class="d-inline-block align-top img-fluid img-w-100">
 	    </a>

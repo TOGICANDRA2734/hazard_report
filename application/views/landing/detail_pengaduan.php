@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 	  <div class="container">
 	    <a class="navbar-brand" href="<?= base_url(); ?>">
@@ -20,7 +20,7 @@
 	    </div>
 	  </div>
 	</nav>
-</header>
+</header> -->
 <main class="flex-shrink-0">
 	<div class="container mb-5">
 		<div class="row justify-content-center py-3">
@@ -173,7 +173,7 @@
 			</div>
 		</div>
 		<hr>
-		<div class="row py-3">
+		<div class="row" style="padding: 2.5rem 0 5rem;">
 			<div class="col-lg">
 				<div class="card">
 					<div class="card-header mt-2">
