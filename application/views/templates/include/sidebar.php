@@ -57,8 +57,8 @@
           <?php if (
             $_SERVER['REQUEST_URI'] == '/app/user' || 
             $_SERVER['REQUEST_URI'] == '/app/user/'||
-            $_SERVER['REQUEST_URI'] == '/app/kecamatan' || 
-            $_SERVER['REQUEST_URI'] == '/app/kecamatan/' ||
+            $_SERVER['REQUEST_URI'] == '/app/site' || 
+            $_SERVER['REQUEST_URI'] == '/app/site/' ||
             $_SERVER['REQUEST_URI'] == '/app/kelurahan' || 
             $_SERVER['REQUEST_URI'] == '/app/kelurahan/' ||
             $_SERVER['REQUEST_URI'] == '/app/masyarakat' || 
@@ -95,17 +95,17 @@
               </li> 
               <li class="nav-item">
                 <?php if (
-                  $_SERVER['REQUEST_URI'] == '/app/kecamatan' || 
-                  $_SERVER['REQUEST_URI'] == '/app/kecamatan/'
+                  $_SERVER['REQUEST_URI'] == '/app/site' || 
+                  $_SERVER['REQUEST_URI'] == '/app/site/'
                 ): ?>
-                  <a href="<?= base_url('kecamatan'); ?>" class="nav-link active">
+                  <a href="<?= base_url('site'); ?>" class="nav-link active">
                     <i class="fas fa-city nav-icon"></i>
-                    <p>Kecamatan</p>
+                    <p>site</p>
                   </a>
                 <?php else: ?>
-                  <a href="<?= base_url('kecamatan'); ?>" class="nav-link">
+                  <a href="<?= base_url('site'); ?>" class="nav-link">
                     <i class="fas fa-city nav-icon"></i>
-                    <p>Kecamatan</p>
+                    <p>site</p>
                   </a>
                 <?php endif ?>
               </li>

@@ -8,7 +8,7 @@ class Kelurahan extends CI_Controller
 		parent::__construct();
 		$this->load->model('Admin_model', 'admo');
 		$this->load->model('Kelurahan_model', 'kelmo');
-		$this->load->model('Kecamatan_model', 'kemo');
+		$this->load->model('Site_model', 'kemo');
 
 		$this->admo->checkLoginAdmin();
 	}
@@ -28,9 +28,9 @@ class Kelurahan extends CI_Controller
 	{
 		$data['dataUser']	= $this->admo->getDataUserAdmin();
 		$data['title'] 		= 'Tambah Kelurahan';
-		$data['kecamatan']	= $this->kemo->getKecamatan();
+		$data['site']	= $this->kemo->getSite();
 
-		$this->form_validation->set_rules('id_kecamatan', 'Kecamatan', 'required|trim');
+		$this->form_validation->set_rules('id_site', 'site', 'required|trim');
 		$this->form_validation->set_rules('kelurahan', 'Kelurahan', 'required|trim');
 		if ($this->form_validation->run() == false) {
 		    $this->load->view('templates/header-admin', $data);
@@ -44,11 +44,11 @@ class Kelurahan extends CI_Controller
 	public function editKelurahan($id_kelurahan)
 	{
 		$data['dataUser']	= $this->admo->getDataUserAdmin();
-		$data['kecamatan']	= $this->kemo->getKecamatan();
+		$data['site']	= $this->kemo->getSite();
 		$data['kelurahan']	= $this->kelmo->getKelurahanById($id_kelurahan);
 		$data['title'] 		= 'Ubah Kelurahan - ' . $data['kelurahan']['kelurahan'];
 
-		$this->form_validation->set_rules('id_kecamatan', 'Kecamatan', 'required|trim');
+		$this->form_validation->set_rules('id_site', 'Site', 'required|trim');
 		$this->form_validation->set_rules('kelurahan', 'Kelurahan', 'required|trim');
 		if ($this->form_validation->run() == false) {
 		    $this->load->view('templates/header-admin', $data);

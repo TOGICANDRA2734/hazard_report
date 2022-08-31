@@ -1,11 +1,11 @@
 <div class="container">
 	<div class="row justify-content-center py-3">
 		<div class="col-lg header-title">
-			<h3><i class="fas fa-fw fa-city"></i> Kecamatan</h3>
+			<h3><i class="fas fa-fw fa-city"></i> site</h3>
 		</div>
 		<?php if ($dataUser['jabatan'] == 'administrator'): ?>
 			<div class="col-lg header-button">
-				<a href="<?= base_url('kecamatan/addKecamatan'); ?>" class="btn btn-primary"><i class="fas fa-fw fa-plus"></i> Tambah Kecamatan</a>
+				<a href="<?= base_url('site/addKecamatan'); ?>" class="btn btn-primary"><i class="fas fa-fw fa-plus"></i> Tambah site</a>
 			</div>
 		<?php endif ?>
 	</div>
@@ -16,7 +16,7 @@
 					<thead class="thead-dark">
 						<tr>
 							<th class="align-middle">No.</th>
-							<th class="align-middle">Kecamatan</th>
+							<th class="align-middle">site</th>
 							<?php if ($dataUser['jabatan'] == 'administrator'): ?>
 								<th class="align-middle">Aksi</th>
 							<?php endif ?>
@@ -24,15 +24,15 @@
 					</thead>
 					<tbody>
 						<?php $i = 1; ?>
-						<?php foreach ($kecamatan as $dk): ?>
+						<?php foreach ($site as $dk): ?>
 							<tr>
 								<td class="align-middle"><?= $i++; ?></td>
-								<td class="align-middle"><?= $dk['kecamatan']; ?></td>
+								<td class="align-middle"><?= $dk['site']; ?></td>
 								<?php if ($dataUser['jabatan'] == 'administrator'): ?>
 									<td class="align-middle text-center">
-										<a href="<?= base_url('kecamatan/editKecamatan/' . $dk['id_kecamatan']); ?>" class="btn btn-sm btn-success m-1"><i class="fas fa-fw fa-edit"></i></a>
+										<a href="<?= base_url('site/editKecamatan/' . $dk['id_kecamatan']); ?>" class="btn btn-sm btn-success m-1"><i class="fas fa-fw fa-edit"></i></a>
 										<?php if ($dataUser['jabatan'] == 'administrator'): ?>
-											<a href="<?= base_url('kecamatan/removeKecamatan/' . $dk['id_kecamatan']); ?>" class="btn btn-sm btn-danger m-1 btn-delete" data-nama="<?= $dk['kecamatan']; ?>"><i class="fas fa-fw fa-fw fa-trash"></i></a>
+											<a href="<?= base_url('site/removeKecamatan/' . $dk['id_kecamatan']); ?>" class="btn btn-sm btn-danger m-1 btn-delete" data-nama="<?= $dk['site']; ?>"><i class="fas fa-fw fa-fw fa-trash"></i></a>
 										<?php endif ?>
 									</td>
 								<?php endif ?>

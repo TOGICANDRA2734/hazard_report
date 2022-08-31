@@ -39,12 +39,12 @@
 	            </div>
 						</div>
 						<div class="form-group">
-							<label for="form_kecamatan">Kecamatan</label>
+							<label for="form_kecamatan">site</label>
 							<select style="cursor: not-allowed;" disabled class="custom-select" id="form_kecamatan">
 								<?php 
-									$getKecamatanByIdFromKelurahan = $this->db->get_where('kecamatan', ['id_kecamatan' => $pengaduan['id_kecamatan']])->row_array();
+									$getKecamatanByIdFromKelurahan = $this->db->get_where('site', ['id_kecamatan' => $pengaduan['id_kecamatan']])->row_array();
 								?>
-								<option value="<?= $getKecamatanByIdFromKelurahan['id_kecamatan']; ?>"><?= $getKecamatanByIdFromKelurahan['kecamatan']; ?></option>
+								<option value="<?= $getKecamatanByIdFromKelurahan['id_kecamatan']; ?>"><?= $getKecamatanByIdFromKelurahan['site']; ?></option>
 							</select>
 						</div>
 						<div class="form-group">

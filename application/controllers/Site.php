@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Kecamatan extends CI_Controller 
+class Site extends CI_Controller 
 {
 	public function __construct()
 	{
 		parent::__construct();
 		$this->load->model('Admin_model', 'admo');
-		$this->load->model('Kecamatan_model', 'kemo');
+		$this->load->model('Site_model', 'kemo');
 
 		$this->admo->checkLoginAdmin();
 	}
@@ -15,47 +15,47 @@ class Kecamatan extends CI_Controller
 	public function index()
 	{
 		$data['dataUser']	= $this->admo->getDataUserAdmin();
-		$data['title']  	= 'Kecamatan';
-		$data['kecamatan']	= $this->kemo->getKecamatan();
+		$data['title']  	= 'Site';
+		$data['site']	= $this->kemo->getSite();
 		$this->load->view('templates/header-admin', $data);
-		$this->load->view('kecamatan/index', $data);
+		$this->load->view('site/index', $data);
 		$this->load->view('templates/footer-admin', $data);
 	}
 
-	public function addKecamatan()
+	public function addSite()
 	{
 		$data['dataUser']	= $this->admo->getDataUserAdmin();
-		$data['title'] 		= 'Tambah Kecamatan';
+		$data['title'] 		= 'Tambah site';
 
-		$this->form_validation->set_rules('kecamatan', 'Kecamatan', 'required|trim');
+		$this->form_validation->set_rules('site', 'site', 'required|trim');
 		if ($this->form_validation->run() == false) {
 		    $this->load->view('templates/header-admin', $data);
-		    $this->load->view('kecamatan/add_kecamatan', $data);
+		    $this->load->view('site/add_site', $data);
 		    $this->load->view('templates/footer-admin', $data);  
 		} else {
-		    $this->kemo->addKecamatan();
+		    $this->kemo->addSite();
 		}
 	}
 
-	public function editKecamatan($id_kecamatan)
+	public function editSite($id_site)
 	{
 		$data['dataUser']	= $this->admo->getDataUserAdmin();
-		$data['kecamatan']	= $this->kemo->getKecamatanById($id_kecamatan);
-		$data['title'] 		= 'Ubah Kecamatan - ' . $data['kecamatan']['kecamatan'];
+		$data['site']	= $this->kemo->getSiteById($id_site);
+		$data['title'] 		= 'Ubah site - ' . $data['site']['site'];
 
-		$this->form_validation->set_rules('kecamatan', 'Kecamatan', 'required|trim');
+		$this->form_validation->set_rules('site', 'site', 'required|trim');
 		if ($this->form_validation->run() == false) {
 		    $this->load->view('templates/header-admin', $data);
-		    $this->load->view('kecamatan/edit_kecamatan', $data);
+		    $this->load->view('site/edit_site', $data);
 		    $this->load->view('templates/footer-admin', $data);  
 		} else {
-		    $this->kemo->editKecamatan($id_kecamatan);
+		    $this->kemo->editSite($id_site);
 		}
 	}
 
-	public function removeKecamatan($id_kecamatan)
+	public function removeSite($id_site)
 	{
 		$data['dataUser']	= $this->admo->getDataUserAdmin();
-		$this->kemo->removeKecamatan($id_kecamatan);
+		$this->kemo->removeSite($id_site);
 	}
 }

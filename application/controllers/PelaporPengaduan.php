@@ -9,7 +9,7 @@ class PelaporPengaduan extends CI_Controller
 		$this->load->model('Pelapor_model', 'pelmo');
 		$this->load->model('PelaporPengaduan_model', 'pepemo');
 		$this->load->model('Kelurahan_model', 'kelmo');
-		$this->load->model('Kecamatan_model', 'kemo');
+		$this->load->model('Site_model', 'kemo');
 
 		$this->pelmo->checkLoginUser();
 	}
@@ -34,7 +34,7 @@ class PelaporPengaduan extends CI_Controller
 	{
 		$data['dataUser']	= $this->pelmo->getDataUser();
 		$data['kelurahan']	= $this->kelmo->getKelurahan();
-		$data['kecamatan']	= $this->kemo->getKecamatan();
+		$data['site']	= $this->kemo->getSite();
 		$data['title'] 		= 'Tambah Pengaduan';
 
 		$this->form_validation->set_rules('id_kelurahan', 'Kelurahan', 'required|trim|is_natural_no_zero');
@@ -53,7 +53,7 @@ class PelaporPengaduan extends CI_Controller
 	{
 		$data['dataUser']	= $this->pelmo->getDataUser();
 		$data['kelurahan']	= $this->kelmo->getKelurahan();
-		$data['kecamatan']	= $this->kemo->getKecamatan();
+		$data['site']	= $this->kemo->getSite();
 		$data['pengaduan']	= $this->pepemo->getPengaduanById($id_pengaduan);
 		$data['title'] 		= 'Ubah Pengaduan - ' . $data['pengaduan']['isi_laporan'];
 

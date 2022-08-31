@@ -24,8 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 // $config['base_url'] = 'http://ptrci.co.id/app/';
-$config['base_url'] = '/app/hazard';
-$config['base_url_css'] = '/app';
+$config['base_url'] = '/zona_lapor';
 
 /*
 |--------------------------------------------------------------------------

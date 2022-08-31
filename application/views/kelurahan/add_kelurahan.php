@@ -22,10 +22,10 @@
 			  <div class="card-body">
 			  	<form action="<?= base_url('kelurahan/addKelurahan'); ?>" method="post">
 					<div class="form-group">
-						<label for="id_kecamatan">Kecamatan</label>
+						<label for="id_kecamatan">site</label>
 						<select id="id_kecamatan" class="custom-select <?= (form_error('id_kecamatan')) ? 'is-invalid' : ''; ?>" name="id_kecamatan">
-							<?php foreach ($kecamatan as $dk): ?>
-								<option value="<?= $dk['id_kecamatan']; ?>"><?= ucwords(strtolower($dk['kecamatan'])); ?></option>
+							<?php foreach ($site as $dk): ?>
+								<option value="<?= $dk['id_kecamatan']; ?>"><?= ucwords(strtolower($dk['site'])); ?></option>
 							<?php endforeach ?>
 						</select>
 						<div class="invalid-feedback">

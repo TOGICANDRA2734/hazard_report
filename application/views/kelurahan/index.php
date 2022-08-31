@@ -17,7 +17,7 @@
 						<tr>
 							<th class="align-middle">No.</th>
 							<th class="align-middle">Kelurahan</th>
-							<th class="align-middle">Kecamatan</th>
+							<th class="align-middle">site</th>
 							<?php if ($dataUser['jabatan'] == 'administrator'): ?>
 								<th class="align-middle">Aksi</th>
 							<?php endif ?>
@@ -29,7 +29,7 @@
 							<tr>
 								<td class="align-middle"><?= $i++; ?></td>
 								<td class="align-middle"><?= $dk['kelurahan']; ?></td>
-								<td class="align-middle"><?= $dk['kecamatan']; ?></td>
+								<td class="align-middle"><?= $dk['site']; ?></td>
 								<?php if ($dataUser['jabatan'] == 'administrator'): ?>
 									<td class="align-middle text-center">
 										<a href="<?= base_url('kelurahan/editKelurahan/' . $dk['id_kelurahan']); ?>" class="btn btn-sm btn-success m-1"><i class="fas fa-fw fa-edit"></i></a>

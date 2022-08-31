@@ -30,15 +30,15 @@
 	            </div>
 						</div>
 						<div class="form-group">
-							<label for="form_kecamatan">Kecamatan</label>
+							<label for="form_kecamatan">site</label>
 							<select class="form-control" id="form_kecamatan">
 								<?php 
-									$getKecamatanByIdFromKelurahan = $this->db->get_where('kecamatan', ['id_kecamatan' => $pengaduan['id_kecamatan']])->row_array();
+									$getKecamatanByIdFromKelurahan = $this->db->get_where('site', ['id_kecamatan' => $pengaduan['id_kecamatan']])->row_array();
 								?>
-								<option value="<?= $getKecamatanByIdFromKelurahan['id_kecamatan']; ?>"><?= $getKecamatanByIdFromKelurahan['kecamatan']; ?></option>
-								<?php foreach ($kecamatan as $dataKecamatan): ?>
+								<option value="<?= $getKecamatanByIdFromKelurahan['id_kecamatan']; ?>"><?= $getKecamatanByIdFromKelurahan['site']; ?></option>
+								<?php foreach ($site as $dataKecamatan): ?>
 									<?php if ($dataKecamatan['id_kecamatan'] != $getKecamatanByIdFromKelurahan['id_kecamatan']): ?>
-										<option value="<?= $dataKecamatan['id_kecamatan']; ?>"><?= $dataKecamatan['kecamatan']; ?></option>
+										<option value="<?= $dataKecamatan['id_kecamatan']; ?>"><?= $dataKecamatan['site']; ?></option>
 									<?php endif ?>
 								<?php endforeach ?>
 							</select>

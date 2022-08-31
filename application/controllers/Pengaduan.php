@@ -10,7 +10,7 @@ class Pengaduan extends CI_Controller
 		$this->load->model('Pengaduan_model', 'pemo');
 		$this->load->model('Masyarakat_model', 'mamo');
 		$this->load->model('Kelurahan_model', 'kelmo');
-		$this->load->model('Kecamatan_model', 'kemo');
+		$this->load->model('Site_model', 'kemo');
 
 		$this->admo->checkLoginAdmin();
 	}
@@ -36,7 +36,7 @@ class Pengaduan extends CI_Controller
 		$data['dataUser']	= $this->admo->getDataUserAdmin();
 		$data['masyarakat']	= $this->mamo->getMasyarakat();
 		$data['kelurahan']	= $this->kelmo->getKelurahan();
-		$data['kecamatan']	= $this->kemo->getKecamatan();
+		$data['site']	= $this->kemo->getKecamatan();
 		$data['title'] 		= 'Tambah Pengaduan';
 
 		$this->form_validation->set_rules('id_kelurahan', 'Kelurahan', 'required|trim|is_natural_no_zero');
@@ -56,7 +56,7 @@ class Pengaduan extends CI_Controller
 		$data['dataUser']	= $this->admo->getDataUserAdmin();
 		$data['masyarakat']	= $this->mamo->getMasyarakat();
 		$data['kelurahan']	= $this->kelmo->getKelurahan();
-		$data['kecamatan']	= $this->kemo->getKecamatan();
+		$data['site']	= $this->kemo->getKecamatan();
 		$data['pengaduan']	= $this->pemo->getPengaduanById($id_pengaduan);
 		$data['title'] 		= 'Ubah Pengaduan - ' . $data['pengaduan']['isi_laporan'];
 

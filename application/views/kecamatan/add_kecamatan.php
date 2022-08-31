@@ -17,15 +17,15 @@
 		<div class="col-lg-6 p-3">
 			<div class="card">
 			  <div class="card-header">
-			  	<h3 class="my-auto"><i class="fas fa-fw fa-plus"></i> Tambah Kecamatan</h3>
+			  	<h3 class="my-auto"><i class="fas fa-fw fa-plus"></i> Tambah site</h3>
 			  </div>
 			  <div class="card-body">
-			  	<form action="<?= base_url('kecamatan/addKecamatan'); ?>" method="post">
+			  	<form action="<?= base_url('site/addKecamatan'); ?>" method="post">
 					<div class="form-group">
-						<label for="kecamatan">Kecamatan</label>
-						<input type="text" id="kecamatan" class="form-control <?= (form_error('kecamatan')) ? 'is-invalid' : ''; ?>" name="kecamatan" required value="<?= set_value('kecamatan'); ?>">
+						<label for="site">site</label>
+						<input type="text" id="site" class="form-control <?= (form_error('site')) ? 'is-invalid' : ''; ?>" name="site" required value="<?= set_value('site'); ?>">
 						<div class="invalid-feedback">
-              <?= form_error('kecamatan'); ?>
+              <?= form_error('site'); ?>
             </div>
 					</div>
 					<div class="form-group text-right">

@@ -12,14 +12,14 @@ class Kelurahan_model extends CI_Model
 
 	public function getKelurahan()
 	{
-		$this->db->join('kecamatan', 'kelurahan.id_kecamatan=kecamatan.id_kecamatan');
+		$this->db->join('site', 'kelurahan.id_kecamatan=site.id_kecamatan');
 		$this->db->order_by('kelurahan', 'asc');
 		return $this->db->get('kelurahan')->result_array();
 	}
 
 	public function getKelurahanById($id_kelurahan)
 	{
-		$this->db->join('kecamatan', 'kelurahan.id_kecamatan=kecamatan.id_kecamatan');
+		$this->db->join('site', 'kelurahan.id_kecamatan=site.id_kecamatan');
 		return $this->db->get_where('kelurahan', ['id_kelurahan' => $id_kelurahan])->row_array();	
 	}
 

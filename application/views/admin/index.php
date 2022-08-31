@@ -91,8 +91,8 @@
 								<td class="align-middle"><?= $dp['isi_laporan']; ?></td>
 								<td class="align-middle"><?= $dp['kelurahan']; ?></td>
 								<td class="align-middle text-center">
-									<a href="<?= base_url_css('assets/img/img_pengaduan/') . $dp['foto']; ?>" class="enlarge">
-										<img src="<?= base_url_css('assets/img/img_pengaduan/') . $dp['foto']; ?>" class="img-fluid img-w-75-hm-100" alt="<?= $dp['foto']; ?>">
+									<a href="<?= base_url('assets/img/img_pengaduan/') . $dp['foto']; ?>" class="enlarge">
+										<img src="<?= base_url('assets/img/img_pengaduan/') . $dp['foto']; ?>" class="img-fluid img-w-75-hm-100" alt="<?= $dp['foto']; ?>">
 									</a>
 								</td>
 								<td class="align-middle"><?= $dp['username']; ?></td>
